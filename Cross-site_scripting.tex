@@ -1,5 +1,6 @@
 \documentclass[12pt,a4paper,draft]{article}
 
+\usepackage{a4wide}
 \usepackage[romanian]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8x]{inputenc}
@@ -23,6 +24,19 @@
 		OWASP este o organizație mondială caritabilă non-profit care are ca scop îmbunătățirea securității software. Încă din 2003, 2004 și apoi din 3 în 3 ani a creat un top al celor mai importante tehnici de găsire și utilizare a breșelor în aplicații web. Acest top nu este un standard de facto dar este urmărit îndeaproape de către instituții importante din Statele Unite și se recomandă ca orice aplicație web de larg consum sau care face uz de informații importante să încerce să minimizeze probabilitatea de a fi manipulate de către un atacator folosindu-se de tehnicile enumerate în cadrul topului.
 
 		În momentul de față se lucrează și la o versiune a topului pentru amenințări pe dispozitivele mobile.
+		
+		\subsection{Atacurile predominante}
+		Metodologia prin care OWASP clasifică aceste vulnerabilități este una relativ simplă. Ea se bazează pe identificarea și estimarea factorilor de impact asupra afacerii și pe identificarea probabilității ca vulnerabilitatea să fie descoperită și exploatată.
+
+		Astfel, probabilitatea ca o vulnerabilitate să fie descoperită și exploatată poate fi estimată luând în considerare următorii factori:
+		\begin{description}
+			\item[Nivelul de competență] Cât de competent în domeniul informaticii trebuie să fie un atacator pentru a putea exploata vulnerabilitatea;
+			\item[Motivația] Cât de motivat ar putea fi un atacator să descopere și să exploateze vulnerabilitatea;
+			\item[Oportunitate și resurse] De ce resurse și drepturi ar trebui să dispună un atacator pentru a putea duce la bun sfârșit exploatarea vulnerabilității;
+			\item[Vizibilitatea] Cât de ușor poate fi descoperită vulnerabilitatea;
+			\item[Ușurința în exploatare] Cât de ușor poate fi să te folosești de vulnerabilitatea respectivă;
+			\item[]
+		\end{description}
 
 		Pentru calculatoarele tradiționale, amenințările din 2013, conform OWASP, sunt:
 		\begin{enumerate}
@@ -37,6 +51,4 @@
 			\item Folosirea componentelor cu vulnerabilități cunoscute
 			\item Redirect-uri și Forward-uri invalide
 		\end{enumerate}
-		
-	
 \end{document}
